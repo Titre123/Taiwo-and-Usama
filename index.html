@@ -3,33 +3,34 @@
   <head>
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@500&display=swap" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="bg-body">
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <main>
       <div>
-        <h1 id="title">freeCodeCamp Survey Form</h1>
-        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <h1 id="title" class="ff-Inter text-align">freeCodeCamp Survey Form</h1>
+        <p id="description" class="ff-karla text-align">Thank you for taking the time to help us improve the platform</p>
       </div>
-      <form id="survey-form">
+      <form id="survey-form" class="bg-form container">
         <div class="input-text">
-          <label for="name">Name</label>
-          <input type="text" id="name" placeholder="Enter Your Name" required/>
+          <label for="name" id="name-label" class="ff-karla">Name</label>
+          <input type="text" id="name" placeholder="Enter Your Name" class="ff-karla" required/>
         </div>
         <div class="input-text">
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Enter Your Email" required/>
+          <label for="email" id="email-label" class="ff-karla">Email</label>
+          <input type="email" id="email" placeholder="Enter Your Email" class="ff-karla" required/>
         </div>
         <div class="input-text">
-          <label for="number">Age(Optional)</label>
-          <input type="number" id="number" placeholder="Age" min="14" max="90"/>
+          <label for="number" id="number-label" class="ff-karla">Age(Optional)</label>
+          <input type="number" id="number" placeholder="Age" min="14" max="90" class="ff-karla"/>
         </div>
         <div id="dropdown-div"><br>
-            <label id="dropdown-label"><strong>Which option best describes your current role? </strong></label><br>
-            <select id="dropdown" name="code-lang" class="form">
-                <option value="C">Select current role</option>
+            <label id="dropdown-label" class="ff-karla"><strong>Which option best describes your current role? </strong></label><br>
+            <select id="dropdown" name="code-lang" class="form ff-karla" >
+                <option value="C" class="ff-karla">Select current role</option>
                 <option value="Student">Student</option>
                 <option value="Full time job">Full time job</option>
                 <option value="Full time learner">Full time learner</option>
@@ -39,32 +40,32 @@
          </div>
 <div id="button-area">
              <br>
-            <label id="job-label"><b>Would you recommend freeCodeCamp to a friend?</b></label><br>
-            <input type="radio" class="radio-inline" name="job" value="Definitely" checked> Definitely<br>
-            <input type="radio" class="radio-inline" name="job" value="May be"> May be<br>
-            <input type="radio" class="radio-inline" name="job" value="Not sure"> Not sure
+            <label id="job-label" class="ff-karla"><b>Would you recommend freeCodeCamp to a friend?</b></label><br>
+            <input type="radio" class="radio-inline ff-karla" name="job" value="Definitely"  checked> Definitely<br>
+            <input type="radio" class="radio-inline ff-karla" name="job" value="May be" > May be<br>
+            <input type="radio" class="radio-inline ff-karla" name="job" value="Not sure"> Not sure
           </div>
           <div id="dropdown"><br><br>
             <label id="dropdown-label"><strong>What is your favorite feature of freeCodeCamp? </strong></label><br>
-            <select id="dropdown" name="code-lang" class="form"><br><br>
+            <select id="dropdown" name="code-lang" class="form ff-karla"><br><br>
                 <option value="Select">Select an Option</option>
-                <option value="Challenges">Challenges</option>
+                <option value="Challenges" >Challenges</option>
                 <option value="Projects">Projects</option>
                 <option value="Community">Community</option>
                 <option value="Open Source">Open Source</option>
             </select>
          </div>
           <div id="button-area"><br><br>
-            <label id="os-label"><b>What would you like to see improved? (Check all that apply)</b></label><br>
-            <input type="checkbox" name="tech1" value="front end projects"> front end projects<br>
-            <input type="checkbox" name="tech1" value="Back end projects"> Back end projects<br><input type="checkbox" name="tech1" value="Data Visulization"> Data Visulization<br><input type="checkbox" name="tech1" value="Challenges"> Challenges<br><input type="checkbox" name="tech1" value="Open Source Community"> Open Source Community<br><input type="checkbox" name="tech1" value="Gitter help rooms"> Gitter help rooms<br>
-            <input type="checkbox" name="tech1" value="Videos"> Videos<br>
-            <input type="checkbox" name="tech1" value="City Meetups"> City Meetups<br>
+            <label id="os-label" class="ff-karla"><b>What would you like to see improved? (Check all that apply)</b></label><br>
+            <input type="checkbox" name="tech1" value="front end projects" class="ff-karla"> front end projects<br>
+            <input type="checkbox" name="tech1" value="Back end projects" class="ff-karla"> Back end projects<br><input type="checkbox" name="tech1" value="Data Visulization"> Data Visulization<br><input type="checkbox" name="tech1" value="Challenges"> Challenges<br><input type="checkbox" name="tech1" value="Open Source Community"> Open Source Community<br><input type="checkbox" name="tech1" value="Gitter help rooms"> Gitter help rooms<br>
+            <input type="checkbox" name="tech1" value="Videos" class="ff-karla"> Videos<br>
+            <input type="checkbox" name="tech1" value="City Meetups" class="ff-karla"> City Meetups<br>
           </div>
           <div id="ending"><br><br>
-            <label id="comments-label">Add any comments and suggestions</label><br>
-            <textarea style= height:120px;" class="form" placeholder="Please feel free to write a review..."></textarea><br><br>
-            <input id="submit" type="submit"  class="form">
+            <label id="comments-label" class="ff-karla">Add any comments and suggestions</label><br>
+            <textarea style= "height:120px;" class="form" placeholder="Please feel free to write a review..." class="ff-karla"></textarea><br><br>
+            <input id="submit" type="submit"  class="form" class="ff-karla">
           </div>
         </form>
     </div>
